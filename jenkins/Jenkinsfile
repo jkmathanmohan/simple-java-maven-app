@@ -2,6 +2,9 @@ pipeline {
     agent {
         label 'master'
     }
+    tools {
+        maven "m3"
+    }
     stages {
         stage('Build') {
             steps {
